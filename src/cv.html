@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nguyễn Văn A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px 50px;
+            color: #333;
+        }
+        h1 {
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-align: center; /* Căn giữa tiêu đề CV */
+        }
+
+        /* CSS để căn giữa ảnh */
+        .img-container {
+            text-align: center; /* Căn giữa nội dung (ảnh) bên trong container */
+            margin-bottom: 20px;
+        }
+
+        .placeholder-image {
+            width: 150px;
+            height: 180px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            /* margin: auto; display: block; cũng là một cách căn giữa block element */
+            display: inline-block; /* Hiển thị như inline-block để text-align: center hoạt động */
+        }
+
+        /* Phần thông tin cá nhân giờ nằm dưới ảnh */
+        .info-table {
+            display: table;
+            border-collapse: collapse;
+            margin: 0 auto; /* Căn giữa bảng thông tin */
+        }
+        .info-row {
+            display: table-row;
+        }
+        .info-cell-label {
+            display: table-cell;
+            padding: 5px 15px 5px 0;
+            font-weight: normal;
+            vertical-align: top;
+        }
+        .info-cell-value {
+            display: table-cell;
+            padding: 5px 0;
+            font-weight: bold;
+            vertical-align: top;
+        }
+        .media-section {
+            margin-top: 40px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto; /* Căn giữa các khối media player */
+        }
+        .media-label {
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        .player-placeholder {
+            width: 100%;
+            height: 35px;
+            background-color: #f1f3f4;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CV Nguyễn Văn A</h1>
+
+<!-- Container bọc ảnh và sử dụng text-align để căn giữa -->
+<div class="img-container">
+    <div class="placeholder-image"></div>
+</div>
+
+<div class="info-table">
+    <div class="info-row">
+        <div class="info-cell-label">Họ và tên:</div>
+        <div class="info-cell-value">Nguyễn Văn A</div>
+    </div>
+    <div class="info-row">
+        <div class="info-cell-label">Quê quán:</div>
+        <div class="info-cell-value">Hà Nội</div>
+    </div>
+    <div class="info-row">
+        <div class="info-cell-label">Trình độ học vấn:</div>
+        <div class="info-cell-value">Đại học</div>
+    </div>
+</div>
+
+<!-- Video giới thiệu -->
+<div class="media-section">
+    <p class="media-label">Video giới thiệu:</p>
+    <div class="player-placeholder">
+        <span>&#9658; 0:00 / 0:04</span>
+        <span>... (Controls placeholder)</span>
+    </div>
+</div>
+
+<!-- Ghi âm -->
+<div class="media-section">
+    <p class="media-label">Ghi âm (nếu có):</p>
+    <div class="player-placeholder">
+        <span>&#9658; 0:00 / 0:00</span>
+        <span>... (Controls placeholder)</span>
+    </div>
+</div>
+
+</body>
+</html>
